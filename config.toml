@@ -1,0 +1,49 @@
+#baseURL = 'http://responsible-it.nl/'
+languageCode = 'nl'
+title = 'Responsible IT'
+theme = 'responsibleItTheme'
+defaultContentLanguage = 'nl'
+pluralizelisttitles ='false'
+
+[menu]
+  [[menu.nav]]
+    name = "Responsible IT"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Projecten"
+    url = "/projecten/"
+    weight = 2
+  [[menu.nav]]
+    name = "Werkplaats"
+    url = "/werkplaats/"
+    weight = 2
+  [[menu.nav]]
+    name = "Community"
+    url = "/Community/"
+    weight = 2
+  [[menu.nav]]
+    name = "Nieuws en publicaties"
+    url = "/nieuws-publicaties/"
+    weight = 2
+
+[build]
+  writeStats = true
+
+[languages]
+  [languages.nl]
+    title = 'Home'
+        contentDir = 'content/dutch'
+
+    weight = 1
+    [languages.nl.params]
+[params]
+  [params.navigation]
+    help = 'Help'
+
+  [languages.en]
+    title = 'My blog'
+    contentDir = 'content/english'
+    weight = 2
+    [languages.en.params]
+

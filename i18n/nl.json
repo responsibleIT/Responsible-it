@@ -1,0 +1,8 @@
+{
+    "accessibilityControls" : "Toegankelijkheid",
+    "filter":{
+        "topic": "Filter op onderwerp",
+        "theme": "Filter op thema",
+        "type": "Filter op mediatype"
+    }
+ }

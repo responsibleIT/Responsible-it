@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="width-container">
+    {{partial "breadcrumbs.html" . }}
+    <div class="grid-row grid-2-1">
+        <main id="main">
+            <h1 class="heading-1">{{ .Title }}</h1>
+
+            <ol class="articles-container">
+                {{ range .Pages.ByPublishDate.Reverse }}
+
+                <li><article  class="article {{ with .Params.tags }}{{ delimit . " "}}{{ end }}">
+                    <a href="{{ .RelPermalink }}">
+                        <h2>{{ .Title }}</h2>
+                    </a>
+                    <span class="article-topic">Art</span>
+                    <p>{{ .Summary }}</p>
+                    </p>
+                </article></li>
+                {{ end }}
+            </ol>
+        </main>
+        {{partial "filters.html"}}
+
+    </div>
+</div>
+
+{{ end }}

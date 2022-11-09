@@ -1,0 +1,52 @@
+<a href="#main" class="skip-to-content-link">Skip to main content</a>
+<header class="main-header">
+    <div class="header-container width-container">
+        <a class="header-logo-link" href="/index.html"><img class="header-logo" src="/img/logo.svg"
+                alt="Hogeschool van Amsterdam logo" /></a>
+        <button class="nav-button menu-button" aria-label="open or close main navigation">Menu</button>
+            <ul>
+                <li class="header-nav-item">
+                    <button class="menu-button accessibility-button"
+                        aria-label="open or close accessibility controls menu">
+                        {{ i18n "accessibilityControls" . }}
+                        
+                    </button>
+                    <menu class="accessibility-dropdown">
+                <li>
+                    <button class="accessibility-toggle">Increase font <span aria-hidden="true">+</span></button>
+                </li>
+                <li>
+                    <button class="accessibility-toggle">Decrease font<span aria-hidden="true">-</span></button>
+                </li>
+                <li>
+                    <button class="accessibility-toggle">
+                        Dark theme<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <li>
+                    <button class="accessibility-toggle">
+                        Grayscale<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <li>
+                    <button class="accessibility-toggle">
+                        High contrast<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <li class="dropdown-item">
+                    <button class="accessibility-toggle">
+                        Hide artwork<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <li class="dropdown-item">
+                    <button class="accessibility-toggle">
+                        Reduce Motion<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                    </button>
+                </li>
+                </menu>
+                </li>
+            </ul>
+
+        {{- partial "nav.html" . -}}
+    </div>
+</header>

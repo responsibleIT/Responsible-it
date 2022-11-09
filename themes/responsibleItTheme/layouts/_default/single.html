@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="hero-artwork artwork-random">
+    <div class="hero-content column-middle width-container">
+    </div>
+</div>
+<main class="width-container" id="main">
+    {{- partial "breadcrumbs.html" . -}}
+
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+<br><br>
+
+<article class="content-article">  {{- $sectionDelimiter := "<!-- section break -->" -}}
+    {{- $rawContentSections := split .RawContent $sectionDelimiter -}}
+    {{- if gt (len $rawContentSections) 1 -}}
+      <div id="section-1">
+        {{ index $rawContentSections 0 | .RenderString }}
+      </div>
+      <div id="section-2">
+        {{ index $rawContentSections 1 | .RenderString }}
+      </div>
+    {{- else -}}
+      <div id="content-not-split-into-sections">
+        {{ .Content }}
+      </div>
+    {{- end -}}</article>
+</main>
+{{ partial "randomArt.html" . }}
+
+{{ end }}

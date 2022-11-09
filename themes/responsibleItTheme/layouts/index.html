@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="width-container">
+  {{partial "breadcrumbs.html" . }}
+  <div class="grid-row grid-2-1">
+    <main id="main">
+      <h1 class="heading-1">{{ .Title }}</h1>
+      {{ .Content }}
+
+    </main>
+
+  </div>
+</div>
+<script src="/js/filter.js"></script>
+
+{{ end }}

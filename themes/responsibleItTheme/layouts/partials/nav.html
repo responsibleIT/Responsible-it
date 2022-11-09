@@ -1,0 +1,20 @@
+<nav class="header-nav" role="navigation">
+    {{ $current := . }}
+    <ul>
+    {{ range .Site.Menus.nav }}
+      <li class="header-nav-item">
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $active = or $active (eq .Name $current.Title) }}
+        {{ $active = or $active (and (eq .Name "Responsible IT") (eq $current.Section "")) }}
+        {{ $active = or $active (and (eq .Name "Projecten") (eq $current.Section "projecten")) }}
+        {{ $active = or $active (and (eq .Name "Werkplaats") (eq $current.Section "werkplaats")) }}
+        {{ $active = or $active (and (eq .Name "Community") (eq $current.Section "community")) }}
+        {{ $active = or $active (and (eq .Name "Nieuws en publicaties") (eq $current.Section "nieuws-publicaties")) }}
+        <a class="header-nav-link" href="{{ .URL }}" {{ if $active }}aria-current="page" id="active"{{ end }}>
+          
+          {{ .Name }}
+        </a>
+      </li>
+    {{ end }}
+    </ul>
+  </nav>

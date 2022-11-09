@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: user/repo
-  branch: master
-  base_url: https://your.oauth-provider-url.com
+  repo: responsibleIT/Responsible-it
+  branch: main
+  base_url: http://213.108.108.83:3000
   accept_roles: #optional - accepts all users if left out
     - admin
     - editor

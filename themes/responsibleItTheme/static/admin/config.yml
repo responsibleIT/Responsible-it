@@ -2,24 +2,29 @@ backend:
   name: github
   repo: responsibleIT/Responsible-it
   branch: main
-  base_url: http://213.108.108.83:3000
+  base_url: http://213.108.108.83/
   accept_roles: #optional - accepts all users if left out
     - admin
     - editor
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "/static/media" # Folder where user uploaded files should go
+public_folder: "/media"
+i18n:
+  structure: multiple_folders
+  locales: [ nl, en ]
+  default_locale: nl
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "content/blog" # The path to the folder where the documents are stored
+  - name: "community" # Used in routes, e.g., /admin/collections/blog
+    label: "Community" # Used in the UI
+    folder: "content/dutch/community" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    format: 'frontmatter'
+    format: 'markdown'
     sort: "date:desc" # Default is title:asc
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "dddd MMMM Do, YYYY"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Date", name: "date", widget: "datetime", format: "dddd MMMM Do, YYYY"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Summary", name: "summary", widget: "text" },
       - {label: "Body", name: "body", widget: "markdown"}
- 
+

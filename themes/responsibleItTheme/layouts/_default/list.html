@@ -8,7 +8,7 @@
 
             <div class="articles-container">
                 {{ range .Pages.ByPublishDate.Reverse }}
-                <article class="article">
+                <article class="article {{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
                     <a href="{{ .RelPermalink }}">
                         <h2>{{ .Title }}</h2>
                     </a>

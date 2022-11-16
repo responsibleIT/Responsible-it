@@ -26,7 +26,7 @@ files:
         ]
 collections:
   - name: "community" # Used in routes, e.g., /admin/collections/blog
-    label: "community" # Used in the UI
+    label: "Community" # Used in the UI
     folder: "content/dutch/community" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -35,7 +35,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Date", name: "date", widget: "datetime", format: 'DD-MM-YYYY'}
       - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "nieuws-publicaties" # Used in routes, e.g., /admin/collections/blog
@@ -48,7 +48,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Date", name: "date", widget: "datetime", format: 'DD-MM-YYYY'}
       - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projecten" # Used in routes, e.g., /admin/collections/blog
@@ -60,7 +60,7 @@ collections:
     sort: "date:desc" # Default is title:asc
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Date", name: "date", widget: "datetime", format: 'DD-MM-YYYY'}
       - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "werkplaats" # Used in routes, e.g., /admin/collections/blog
@@ -73,6 +73,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Date", name: "date", widget: "datetime", format: 'DD-MM-YYYY'}
       - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Body", name: "body", widget: "markdown"}

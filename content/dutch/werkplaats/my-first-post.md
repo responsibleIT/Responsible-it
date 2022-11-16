@@ -1,8 +1,9 @@
 ---
-title: "My First Post"
+title: My First Post
+draft: false
 date: 2022-10-25T13:55:34+02:00
-draft: true
-tags: [ "bar"]
+tags:
+  - bar
 ---
 Toenemende digitalisering biedt kansen, maar legt ook meer druk op de samenleving. In de gemeente spelen tal
 van vraagstukken waar digitale technologie aan kan bijdragen, bijvoorbeeld op het gebied van leefbaarheid,

@@ -1,14 +1,15 @@
 ---
-title: "My First Post"
-date: 2022-10-25T13:55:34+02:00
+title: My First Post
 draft: false
-tags: [ "AI"]
+date: 2022-10-25T13:55:34+02:00
+tags:
+  - AI
 ---
 Toenemende digitalisering biedt kansen, maar legt ook meer druk op de samenleving. In de gemeente spelen tal
 van vraagstukken waar digitale technologie aan kan bijdragen, bijvoorbeeld op het gebied van leefbaarheid,
 gezondheid, onderwijs en mobiliteit. Het is hierbij van belang technologie zo te ontwikkelen, dat deze
 bijvoorbeeld privacy en autonomie waarborgt en niemand buitensluit. Een verantwoorde inzet en ontwikkeling
-van digitale technologie voor de stad is van cruciaal belang.
+van digitale technologie voor de stad is van cruciaal belang.test
 
 <!--more-->
 
@@ -22,4 +23,3 @@ suspendisse potenti nullam ac. Tincidunt id aliquet risus feugiat in. Varius
 quam quisque id diam vel. Egestas erat imperdiet sed euismod nisi. Scelerisque 
 felis imperdiet proin fermentum leo vel orci porta non. Ut faucibus pulvinar 
 elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
-

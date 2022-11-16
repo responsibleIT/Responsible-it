@@ -56,15 +56,14 @@ button[aria-disabled='true'] {
 }
 
 .filter-button {
-    color: var(--filter-button-color);
-    border: 1.5px solid var(--filter-button-color);
+    color: var(--light-blue);
+    border: 1.5px solid var(--light-blue);
     background: none;
-    box-shadow: 0.1em 0.1em 0 var(--filter-button-color);
     transform: translate(-0.1em, -0.1em);
     transition: transform 0.2s, box-shadow 0.2s;
     width: auto;
-    border-radius: 0.4rem;
-    padding: 0.5em 0.75em;
+    border-radius: 1.5rem;
+    padding: 0.3em 0.5em;
     display: block;
     font-weight: 600;
     user-select: none;
@@ -76,10 +75,10 @@ button[aria-disabled='true'] {
 }
 
 .filter input[type=checkbox]:checked + .filter-button {
-    box-shadow: 0 0 0 var(--filter-button-color);
+    box-shadow: 0 0 0 var(--light-blue);
     transform: translate(0, 0);
-    background-color: var(--filter-button-color);
-    color: var(--background-color);
+    background-color: var(--light-blue);
+    color: var(--white);
 }
 
 .filter-button:hover {

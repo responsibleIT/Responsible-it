@@ -8,6 +8,24 @@
     width: 34em;
 }
 
+.intro{
+    margin-top: -97px;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    background-color: var(--orange);
+    box-shadow:1500px 0 0 0 var(--orange)
+    ,1000px 0 0 0 var(--orange)
+    ,500px 0 0 0 var(--orange)
+    ,-1500px 0 0 0 var(--orange)
+    ,-1000px 0 0 0 var(--orange)
+    ,-500px 0 0 0 var(--orange);
+    margin-bottom: 1rem;
+    color: white;
+
+}
+.intro h1{
+    color: white;
+}
 
 .article {
     border: 2px solid var(--subtle-border);
@@ -24,6 +42,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
+    color: (var(--light-blue));
 }
 
 .article p {

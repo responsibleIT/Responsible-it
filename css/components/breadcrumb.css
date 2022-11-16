@@ -37,11 +37,13 @@
     display: none;
 }
 
+
 .breadcrumb-link,
 .breadcrumb-link:visited {
     font-size: inherit;
     color: var(--text-color);
 }
+
 
 /* Back-link */
 .back-link,
@@ -74,6 +76,8 @@
 .breadcrumb-link:hover {
     color: var(--text-color);
 }
+
+
 
 @media (min-width: 40rem) {
     .breadcrumb {

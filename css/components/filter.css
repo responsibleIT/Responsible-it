@@ -36,12 +36,3 @@
         display: none;
     }
 }
-
-[value="AI"]:checked ~ .articles .article:not([data-category~="AI"]),
-[value="data"]:checked ~ .articles .article:not([data-category~="Data"]),
-[value="jQuery"]:checked ~ .articles .article:not([data-category~="jQuery"]),
-[value="WordPress"]:checked ~ .articles .article:not([data-category~="WordPress"]),
-[value="Slider"]:checked ~ .articles .article:not([data-category~="Slider"]),
-[value="fullPage.js"]:checked ~ .articles .article:not([data-category~="fullPage.js"]) {
-  display: none;
-}

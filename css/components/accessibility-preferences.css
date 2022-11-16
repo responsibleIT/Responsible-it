@@ -22,9 +22,15 @@
 }
 
 [data-darktheme='true'] .header-logo,
-[data-darktheme='true'] .footer-image {
+[data-darktheme='true'] .footer-image,
+[data-darktheme='true'] .triangle {
     filter: invert(1);
 }
+/* 
+[data-darktheme='true'] .intro{
+    filter: invert(1);
+} */
+
 
 [data-grayscale='true'] {
     filter: grayscale(1);
@@ -44,6 +50,7 @@
 [data-hideartwork='true'] .hero-artwork {
     background-image: none !important;
     animation: none;
+    display: none;
 }
 
 [data-reducemotion='true'],

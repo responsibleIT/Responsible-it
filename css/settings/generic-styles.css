@@ -47,8 +47,12 @@ textarea,
 select {
     font: inherit;
 }
+b{
+    font-size: 1.50rem;
+}
 
 p,
+b,
 h1,
 h2,
 h3,
@@ -61,6 +65,12 @@ h6 {
 cite {
     font-style: normal;
     font-weight: 700;
+}
+h1{
+    color: var(--orange);
+}
+h2{
+    color: var(--light-blue);
 }
 
 ::selection {
@@ -76,7 +86,7 @@ cite {
     --light-grey: #f3f2f1;
     --white: #fff;
     --yellow: #fd0;
-    --orange: #f3ad16;
+    --orange: #ff5d05;
     --red: #d4351c;
     --purple: #564a97;
     --hva-purple: #25167a;

@@ -20,9 +20,9 @@ fs.readdir(directoryPath, function (err, files) {
 })
 const cssBundle = () =>
   src([
+    directoryPath + '/settings/variables.css',
     directoryPath + '/settings/generic-styles.css',
     directoryPath + '/settings/typography.css',
-    directoryPath + '/settings/variables.css',
 
     directoryPath + '/components/accessibility-controls.css',
     directoryPath + '/components/accessibility-preferences.css',
@@ -40,7 +40,8 @@ const cssBundle = () =>
     directoryPath + '/components/links.css',
     directoryPath + '/components/skip-link.css',
     directoryPath + '/components/skip-link.css',
-    directoryPath + '/components/sub-nav.css'
+    directoryPath + '/components/sub-nav.css',
+    directoryPath + '/components/other.css'
   ])
     .pipe(concat('styles.css'))
     .pipe(dest('assets/css/'))

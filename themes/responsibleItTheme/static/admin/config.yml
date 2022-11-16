@@ -2,29 +2,77 @@ backend:
   name: github
   repo: responsibleIT/Responsible-it
   branch: main
-  base_url: http://213.108.108.83/
+  base_url: http://213.108.108.83
+  locales: [nl, en]
+  default_locale: en
+
   accept_roles: #optional - accepts all users if left out
     - admin
     - editor
-media_folder: "/static/media" # Folder where user uploaded files should go
-public_folder: "/media"
-i18n:
-  structure: multiple_folders
-  locales: [ nl, en ]
-  default_locale: nl
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+files:
+      - file: "content/dutch/_index.md"
+        i18n: true
+        label: "Home"
+        name: "home"
+        fields: [
+          { label: "Title", name: "title", widget: string, i18n: true },
+          { label: "Slogan", name: "slogan", widget: string, i18n: true },
+          { label: "Description", name: "shortDescription", widget: "text", i18n: true },
+          { label: "Header Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
+          { label: "Register", name: "register", widget: string, i18n: true },
+          { label: "Copyright", name: "copyright", widget: string, i18n: true },
+        ]
 collections:
   - name: "community" # Used in routes, e.g., /admin/collections/blog
-    label: "Community" # Used in the UI
+    label: "community" # Used in the UI
     folder: "content/dutch/community" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    format: 'markdown'
+    format: 'frontmatter'
     sort: "date:desc" # Default is title:asc
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Date", name: "date", widget: "datetime", format: "dddd MMMM Do, YYYY"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Summary", name: "summary", widget: "text" },
+      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-
+  - name: "nieuws-publicaties" # Used in routes, e.g., /admin/collections/blog
+    label: "Niews en publicaties" # Used in the UI
+    folder: "content/dutch/nieuws-publicaties" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'frontmatter'
+    sort: "date:desc" # Default is title:asc
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "projecten" # Used in routes, e.g., /admin/collections/blog
+    label: "Projecten" # Used in the UI
+    folder: "content/dutch/projecten" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'frontmatter'
+    sort: "date:desc" # Default is title:asc
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "werkplaats" # Used in routes, e.g., /admin/collections/blog
+    label: "Werkplaats" # Used in the UI
+    folder: "content/dutch/werkplaats" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'frontmatter'
+    sort: "date:desc" # Default is title:asc
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Date", name: "date", widget: "datetime", format: 'MMM MMMM'}
+      - {label: "Category", name: "category", widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

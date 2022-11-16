@@ -19,7 +19,7 @@
 }
 
 .hero-artwork {
-    height: min(75vh, 40rem);
+    height: min(75vh, 30rem);
     background-color: var(--black-2);
 }
 

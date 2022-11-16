@@ -1,0 +1,22 @@
+.triangle {
+    width: 311.769145362px; /* (2√3)*h/3 */
+	height: 270px; /* √3/2*w */
+    display: flex;
+    /* background-color: #0a0909; */
+    background-color: var(--black);
+    position: absolute;
+    top:600px;
+    left: 0;
+    align-items: center;
+	clip-path: polygon(0 0, 50% 50%, 0 100%);
+  }
+
+  .triangle p{
+    color: var(--white);
+    font-size: 14px;
+    max-width: 150px;
+    padding-right: 32px;
+    margin-left: 8px;
+    padding-top: 32px;
+  }
+  

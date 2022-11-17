@@ -2,7 +2,8 @@
 /public/
 /resources/_gen/
 /assets/jsconfig.json
-/assets/css/
+/assets/css/styles.css
+/themes/responsibleItTheme/static/admin/styles.css
 hugo_stats.json
 /node_modules
 /.vscode

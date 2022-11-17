@@ -3,7 +3,7 @@
 
 name = "ResponsibleItTheme"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/responsibleIT/Responsible-it/blob/main/LICENSE"
 description = ""
 homepage = "http://example.com/"
 tags = []
@@ -11,11 +11,5 @@ features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
+  name = "Responsible IT Amsterdam"
   homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

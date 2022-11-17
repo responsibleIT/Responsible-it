@@ -1,13 +1,12 @@
 .accessibility-button {
     width: 100%;
-
-
 }
 
 .accessibility-dropdown {
     margin: 0;
     display: none;
     border-radius: 0.5rem;
+    width: max-content !important;
 }
 
 .menu-button-opened + .accessibility-dropdown {
@@ -55,8 +54,8 @@
 .accessibility-toggle-checkbox {
     position: relative;
     border: 2px solid var(--text-color);
+    margin-left: 1rem;
 }
-
 .accessibility-toggle-checkbox::after {
     content: '';
     position: absolute;

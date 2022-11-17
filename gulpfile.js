@@ -45,5 +45,6 @@ const cssBundle = () =>
   ])
     .pipe(concat('styles.css'))
     .pipe(dest('assets/css/'))
+    .pipe(dest('themes/responsibleItTheme/static/admin'))
 
 exports.cssBundle = cssBundle

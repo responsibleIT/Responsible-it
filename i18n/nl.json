@@ -1,5 +1,14 @@
 {
     "accessibilityControls" : "Toegankelijkheid",
+    "accessibilityMenu":{
+        "increaseFont" : "Lettertype vergroten",
+        "decreaseFont": "Lettertype verkleinen",
+        "darkTheme": "Donker thema",
+        "grayScale": "Grijs",
+        "contrast": "Hoog contrast",
+        "artwork": "Afbeelding verbergen",
+        "motion": "Beweging verminderen"
+    },
     "filter":{
         "topic": "Filter op onderwerp",
         "theme": "Filter op thema",

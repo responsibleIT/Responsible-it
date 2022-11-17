@@ -13,34 +13,34 @@
                     </button>
                     <menu class="accessibility-dropdown">
                 <li>
-                    <button class="accessibility-toggle">Increase font <span aria-hidden="true">+</span></button>
+                    <button class="accessibility-toggle"> {{ i18n "accessibilityMenu.increaseFont" . }} <span aria-hidden="true">+</span></button>
                 </li>
                 <li>
-                    <button class="accessibility-toggle">Decrease font<span aria-hidden="true">-</span></button>
+                    <button class="accessibility-toggle">{{ i18n "accessibilityMenu.decreaseFont" . }}<span aria-hidden="true">-</span></button>
                 </li>
                 <li>
                     <button class="accessibility-toggle">
-                        Dark theme<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                        {{ i18n "accessibilityMenu.darkTheme" . }}<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
                     </button>
                 </li>
                 <li>
                     <button class="accessibility-toggle">
-                        Grayscale<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                        {{ i18n "accessibilityMenu.grayScale" . }}<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
                     </button>
                 </li>
                 <li>
                     <button class="accessibility-toggle">
-                        High contrast<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
-                    </button>
-                </li>
-                <li class="dropdown-item">
-                    <button class="accessibility-toggle">
-                        Hide artwork<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                        {{ i18n "accessibilityMenu.contrast" . }}<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
                     </button>
                 </li>
                 <li class="dropdown-item">
                     <button class="accessibility-toggle">
-                        Reduce Motion<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                        {{ i18n "accessibilityMenu.artwork" . }}<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <li class="dropdown-item">
+                    <button class="accessibility-toggle">
+                        {{ i18n "accessibilityMenu.motion" . }}<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
                     </button>
                 </li>
                 </menu>

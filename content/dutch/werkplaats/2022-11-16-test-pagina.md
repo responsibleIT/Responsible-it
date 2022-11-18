@@ -1,5 +1,5 @@
 ---
-title: Test pagina
+title: Werkplaats Responsible IT Amsterdam (RITA)
 draft: true
 date: 16-11-2022
 ---

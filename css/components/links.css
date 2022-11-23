@@ -22,12 +22,6 @@ a:focus {
     outline-offset: 3px;
 }
 
-#active{
-    text-decoration: underline;
-    text-decoration-thickness: 0.075em;
-
-}
-
 @media (min-width: 40rem) {
     a {
         font-size: 1.19rem;

@@ -3,6 +3,10 @@
     margin: 1rem 0;
 }
 
+.breadcrumbs-container{
+    padding-bottom: 0 !important;
+}
+
 .breadcrumb-item {
     display: inline-block;
     position: relative;
@@ -42,6 +46,8 @@
 .breadcrumb-link:visited {
     font-size: inherit;
     color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 

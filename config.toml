@@ -1,10 +1,10 @@
-#baseURL = 'http://responsible-it.nl/'
+baseURL = 'http://responsible-it.nl/'
 languageCode = 'nl'
 title = 'Responsible IT'
 theme = 'responsibleItTheme'
 defaultContentLanguage = 'nl'
 pluralizelisttitles ='false'
-
+home = "Responsible It"
 [menu]
   [[menu.nav]]
     name = "Responsible IT"
@@ -24,7 +24,7 @@ pluralizelisttitles ='false'
     weight = 2
   [[menu.nav]]
     name = "Nieuws en publicaties"
-    url = "/nieuws-publicaties/"
+    url = "/nieuws en publicaties/"
     weight = 2
 
 [build]

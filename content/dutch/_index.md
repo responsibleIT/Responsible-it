@@ -1,6 +1,7 @@
 ---
+title: Responsible IT
 draft: false
-tags: [ "bar"]
+tags: []
 ---
 
 {{< intro title="Responsible IT Amsterdam" text= "Het lectoraat Responsible IT onderzoekt hoe we digitale technologie kunnen duiden, ontwerpen en implementeren zodat deze recht doet aan publieke waarden, mensgericht is, en technisch goed. " >}}

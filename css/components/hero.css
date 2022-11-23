@@ -50,3 +50,9 @@
 .hero-content .heading-xl {
     margin-bottom: 1rem;
 }
+
+@media (max-width: 73rem) {
+    .hero-artwork {
+        height: 25vh;
+    }
+}

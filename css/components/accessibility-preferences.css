@@ -23,14 +23,17 @@
 
 [data-darktheme='true'] .header-logo,
 [data-darktheme='true'] .footer-image,
+[data-darktheme='true'] .header-nav-item,
+[data-darktheme='true'] .accessibility-button,
+[data-darktheme='true'] .accessibility-dropdown,
+[data-darktheme='true'] .header-nav-link:hover ,
 [data-darktheme='true'] .triangle {
     filter: invert(1);
 }
-/* 
-[data-darktheme='true'] .intro{
-    filter: invert(1);
-} */
 
+[data-darktheme='true'] .accessibility-toggle {
+    background-color: var(--black);
+}
 
 [data-grayscale='true'] {
     filter: grayscale(1);

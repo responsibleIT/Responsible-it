@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-console.log('main')
 
 // Accessibility controls
 const controls = document.querySelectorAll('.accessibility-toggle')
@@ -42,6 +41,7 @@ controls[6].addEventListener('click', () => toggleAccessibilityControl('reducemo
 
 // Toggle all menu buttons
 const menuButtons = document.querySelectorAll('.menu-button')
+
 menuButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     btn.classList.toggle('menu-button-opened')
@@ -55,3 +55,17 @@ window.addEventListener('mouseup', (e) => {
     menuButtons[1].classList.remove('menu-button-opened')
   }
 })
+
+function toggleMenu () {
+  const el = document.querySelectorAll('.header-nav')[0]
+  const accessibility = document.querySelectorAll('.accessibility-list')[0]
+  if (el.style.display === 'block') {
+    el.style.display = 'none'
+    accessibility.style.display = 'none'
+  } else {
+    el.style.display = 'block'
+    accessibility.style.display = 'block'
+  }
+}
+
+document.getElementById('nav-menu-button').addEventListener('click', () => toggleMenu())

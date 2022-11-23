@@ -4,11 +4,12 @@
     </div>
 </div>
 {{- partial "triangle.html" . -}}
+<div class="width-container breadcrumbs-container">    {{- partial "breadcrumbs.html" . -}}
+</div>
 
 <main class="width-container" id="main">
-    {{- partial "breadcrumbs.html" . -}}
 
-<h1>{{ .Title }}</h1>
+<h1 class="article-title" >{{ .Title }} </h1>
 {{ partial "metadata.html" . }}
 <br><br>
 

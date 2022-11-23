@@ -22,7 +22,7 @@
 }
 
 .accessibility-toggle {
-    background: transparent;
+    background: var(--white);
     color: var(--text-color);
     box-shadow: none;
     width: 100%;
@@ -30,12 +30,16 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    border-radius: 0;
+    border: none;
+
 
     padding: 0.5em 0.75em;
 }
 
 .accessibility-toggle:focus {
-    outline-offset: -1px;
+    /* outline-offset: -1px; */
+    outline: 0;
 }
 
 .accessibility-toggle span {

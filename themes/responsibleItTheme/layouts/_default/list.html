@@ -1,14 +1,22 @@
 {{ define "main" }}
+<div class="hero-list"></div>
 
 <div class="width-container">
     {{partial "breadcrumbs.html" . }}
     <div class="grid-row grid-2-1">
         <main id="main">
             <h1 class="heading-1">{{ .Title }}</h1>
+            <div class="articles-container">
+                <article class="article">
+                    {{ .Content }}
+
+            </div>
+
+
 
             <div class="articles-container">
                 {{ range .Pages.ByPublishDate.Reverse }}
-                <article class="article {{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+                <article class="article {{ with .Params.tags }}{{ delimit . " , " }}{{ end }}">
                     <a href="{{ .RelPermalink }}">
                         <h2>{{ .Title }}</h2>
                     </a>

@@ -3,6 +3,10 @@
 // Accessibility controls
 const controls = document.querySelectorAll('.accessibility-toggle')
 
+window.onload = function () {
+  root.setAttribute(`data-${'delayanimation'}`, 'false')
+}
+
 const changeFontSize = (size) => {
   let currentFontSize = parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
   if (size === 'increase') {

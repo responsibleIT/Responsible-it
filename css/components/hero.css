@@ -14,12 +14,23 @@
     height: min(100vh, 70rem);
 }
 
+.hero-list{
+    background-color: var(--orange);
+    min-height: 25vh;
+    margin-top: calc(0.1rem - 5px);
+    width: 100vw;
+}
+
+.hero-list::after{
+    content: "";
+    
+}
 .hero-small {
     height: min(75vh, 40rem);
 }
 
 .hero-artwork {
-    height: min(75vh, 30rem);
+    height: 25vh;
     background-color: var(--black-2);
 }
 
@@ -49,6 +60,11 @@
 
 .hero-content .heading-xl {
     margin-bottom: 1rem;
+}
+
+.hero-artwork {
+    height: 25vh;
+    margin-top: calc(0.1rem - 5px);
 }
 
 @media (max-width: 73rem) {

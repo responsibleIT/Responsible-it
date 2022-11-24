@@ -14,7 +14,7 @@
 }
 
 .intro{
-    margin-top: -1.2em;
+    margin-top: -1.5em;
     padding-top: 95px;
     padding-bottom: 95px;
     background-color: var(--orange);
@@ -51,10 +51,7 @@
 
 
 .article {
-    border: 2px solid var(--subtle-border);
-    border-radius: 0.5em;
     padding: 1rem;
-    box-shadow: var(--subtle-shadow);
 }
 
 .article-title {
@@ -66,11 +63,14 @@
 
 .article a {
     display: inline-block;
+    text-decoration: underline;
 }
 
 .article h2 {
     font-size: 1.25rem;
     display: inline-block;
+    text-decoration: underline;
+
     font-weight: 700;
     margin: 0;
     color: (var(--light-blue));

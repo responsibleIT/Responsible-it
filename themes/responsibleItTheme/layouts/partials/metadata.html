@@ -1,7 +1,7 @@
 <div>
 
     {{ if .Params.showthedate }}
-    <time> {{ .Date}}</time>
+    <time>{{ .Date.Format "02-01-2006"}}</time>
     {{ end }}
 
 

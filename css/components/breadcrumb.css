@@ -8,6 +8,7 @@
 }
 
 .breadcrumb-item {
+    color: var(--blue);
     display: inline-block;
     position: relative;
     margin-left: 0.6rem;
@@ -45,7 +46,7 @@
 .breadcrumb-link,
 .breadcrumb-link:visited {
     font-size: inherit;
-    color: var(--text-color);
+    color: var(--light-blue);
     text-transform: uppercase;
     font-weight: 600;
 }

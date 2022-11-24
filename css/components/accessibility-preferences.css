@@ -64,6 +64,13 @@
     animation-play-state: paused !important;
 }
 
+[data-delayanimation='true'],
+[data-delayanimation='true'] *,
+[data-delayanimation='true'] *::before,
+[data-delayanimation='true'] *::after {
+    transition: none !important;
+}
+
 /* Check checkboxes if toggle is selected */
 [data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after,
 [data-grayscale='true'] .accessibility-dropdown > li:nth-of-type(4) .accessibility-toggle-checkbox::after,

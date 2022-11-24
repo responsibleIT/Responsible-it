@@ -59,7 +59,6 @@ button[aria-disabled='true'] {
     color: var(--light-blue);
     border: 1.5px solid var(--light-blue);
     background: none;
-    transform: translate(-0.1em, -0.1em);
     transition: transform 0.2s, box-shadow 0.2s;
     width: auto;
     border-radius: 1.5rem;
@@ -68,6 +67,7 @@ button[aria-disabled='true'] {
     font-weight: 600;
     user-select: none;
     cursor: pointer;
+    margin-top: -5px;
 }
 
 .filter input[type=checkbox]{
@@ -76,7 +76,6 @@ button[aria-disabled='true'] {
 
 .filter input[type=checkbox]:checked + .filter-button {
     box-shadow: 0 0 0 var(--light-blue);
-    transform: translate(0, 0);
     background-color: var(--light-blue);
     color: var(--white);
 }
@@ -84,11 +83,13 @@ button[aria-disabled='true'] {
 .filter-button:hover {
     box-shadow: 0 0 0 var(--filter-button-color);
     transform: translate(0, 0);
+    background-color: var(--light-blue);
+    color: var(--white);
+
 }
 
 .filter-button-active {
     box-shadow: 0 0 0 var(--filter-button-color);
-    transform: translate(0, 0);
     background-color: var(--filter-button-color);
     color: var(--background-color);
 }
@@ -137,6 +138,5 @@ button[aria-disabled='true'] {
     position: relative;
     top: 28px;
     bottom:28px;
-    z-index: -1231321231;
-    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+    z-index: 0;
 }

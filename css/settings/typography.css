@@ -69,8 +69,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--orange);
-
-    margin: 1.25rem 0 1rem;
+    text-transform: uppercase;
 }
 
 p {

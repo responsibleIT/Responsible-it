@@ -4,9 +4,9 @@ draft: false
 tags: []
 ---
 
-{{< intro title="Responsible IT Amsterdam" text= "Het lectoraat Responsible IT onderzoekt hoe we digitale technologie kunnen duiden, ontwerpen en implementeren zodat deze recht doet aan publieke waarden, mensgericht is, en technisch goed. " >}}
+{{< intro title="Responsible IT Amsterdam" text= "Het lectoraat Responsible IT onderzoekt digitale technologie die goed is voor de mens, de maatschappij en de planeet. Het lectoraat werkt aan een grote uitdaging: betere digitale technologie. " >}}
                                                  
-Het lectoraat richt zich op het ontwikkelen van verantwoorde digitale technologie, in het bijzonder op de daarvoor benodigde methoden, werkwijzen en ontwerpen. Daartoe maakt zij bijvoorbeeld praktische handreikingen voor ontwerpers en ontwikkelaars van digitale toepassingen die duiding geven aan wat verantwoord betekent. 
+Responsible IT is een onderzoeksgroep van de Hogeschool van Amsterdam. De onderzoeksgroep werkt nauw samen met programmeurs, ontwerpers, bedrijven, bewoners en overheid, zoals de gemeente Amsterdam.
 
 De onderzoekers vertalen ethische en wettelijke kaders naar de praktijk van goede toekomstbestendige technologie ontwikkeling. Ook onderzoeken we inclusieve werkwijzen, waartoe zij in co-creatie met de gebruikers van de digitale technieken en met de ontwerpers en ontwikkelaars, de kwaliteit, functionaliteit en adoptie van technologie bespreken. 
 

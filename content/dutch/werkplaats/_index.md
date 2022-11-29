@@ -4,5 +4,4 @@ draft: false
 tags: []
 ---
 
-Lorem
-
+De Werkplaats Responsible IT Amsterdam (RITA) doet **makend onderzoek**. Vertaalt onderzoeksvragen naar ervaarbare software producten. Maakt experimentele software tools, prototypes, provocatypes en werkende software producten. 

@@ -26,7 +26,8 @@
 
   @media only screen and (max-width: calc(97.25em * 1.1)) {
     .triangle{
-      display: none;
+      position: initial;
+      padding-top: 1rem;
     }
   }
   

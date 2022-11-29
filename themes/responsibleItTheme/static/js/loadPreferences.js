@@ -18,4 +18,7 @@ const storedPreferences = ['grayscale', 'highcontrast', 'hideartwork', 'reducemo
 storedPreferences.forEach(preference => {
   const preferenceValue = localStorage.getItem(preference)
   if (preferenceValue) root.setAttribute(`data-${preference}`, preferenceValue)
+  else {
+    root.setAttribute(`data-${preference}`, 'false')
+  }
 })

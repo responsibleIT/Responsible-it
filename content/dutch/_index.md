@@ -14,4 +14,3 @@ De onderzoeken zijn praktijkgericht. Er is een werkplaats RITA (responsible IT A
 
 Binnen het lectoraat werkt een groep onderzoekers onder aansturing van associate lector Pascal Wiggers aan verantwoorde artificiële intelligentie. De onderzoeksgroep werkt in nauwe samenwerking met haar partner gemeente Amsterdam.
 
-{{< triangle "<style> top:200; </style>" >}}

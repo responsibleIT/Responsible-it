@@ -32,7 +32,7 @@ home = "Responsible It"
 
 [languages]
   [languages.nl]
-    title = 'Responsible IT'
+        title = 'Responsible IT'
         contentDir = 'content/dutch'
 
     weight = 1

@@ -5,13 +5,13 @@ window.onscroll = function () { scrollFunction() }
 function scrollFunction () {
   if (document.documentElement.dataset.reducemotion === 'false') {
     if (!mobileWidth.matches) {
-      if (document.documentElement.scrollTop > 80) {
+      if (document.documentElement.scrollTop >= 148) {
         document.getElementsByClassName('main-header')[0].style.padding = '0px 3.75rem 2px 3.75rem'
-        // document.getElementsByClassName('header-logo')[0].style.display = 'none'
+        document.getElementsByClassName('header-logo')[0].style.display = 'none'
         document.getElementsByClassName('header-container')[0].style.gridTemplateRows = '0 1fr'
       } else {
         document.getElementsByClassName('main-header')[0].style.padding = '0 3.75rem 14px 3.75rem'
-        // document.getElementsByClassName('header-logo')[0].style.display = 'block'
+        document.getElementsByClassName('header-logo')[0].style.display = 'block'
         document.getElementsByClassName('header-container')[0].style.gridTemplateRows = 'auto'
       }
     }

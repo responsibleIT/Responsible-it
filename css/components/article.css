@@ -96,7 +96,7 @@
 
 @media (min-width: 40em) {
     .article {
-        padding: 1.5rem;
+        padding:  1.5rem  1.5rem  1.5rem 0;
     }
 
     .article p {
@@ -110,7 +110,7 @@
 
     .article {
         flex: 1 1 20rem;
-        padding: 1.5rem;
+        padding:  1.5rem  1.5rem  1.5rem 0;
     }
 
     .article p {

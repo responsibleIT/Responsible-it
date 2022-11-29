@@ -4,14 +4,13 @@
     box-shadow: var(--subtle-shadow);
     top: 0;
     position: sticky;
-    transition: 0.4s;
+    transition: 0.2s all ease;
     width: 100%;
     padding: 0 3.75rem 14px 3.75rem;
 }
 
 .header-container {
     display: grid;
-    transition: 0.4s;
     grid-template-areas:
         "logo logo accessibility"
         "nav nav accessibility";

@@ -13,5 +13,10 @@
         "topic": "Filter op onderwerp",
         "theme": "Filter op thema",
         "type": "Filter op mediatype"
+    },
+
+    "index":{
+        "title": "Responsible IT Amsterdam",
+        "subtitle": "Het lectoraat Responsible IT onderzoekt digitale technologie die goed is voor de mens, de maatschappij en de planeet. Het lectoraat werkt aan een grote uitdaging: betere digitale technologie."
     }
  }

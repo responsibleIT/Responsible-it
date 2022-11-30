@@ -8,6 +8,7 @@
             content="The Responsible IT lectureship works on methods and techniques for developers, designers, product owners and users, so
         that from their roles they can contribute to digital products that are reliable, safe, fair and have people's trust."
         />
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
    {{ $style := resources.Get "css/styles.css" | resources.PostCSS  (dict "config" "./postcss.config.js") | resources.Fingerprint "sha512"  }}
    <script type="text/javascript" src="/js/main.js" defer></script>

@@ -4,10 +4,10 @@ draft: false
 tags: []
 ---
 
-{{< intro title="Responsible IT Amsterdam" text= "Het lectoraat Responsible IT onderzoekt digitale technologie die goed is voor de mens, de maatschappij en de planeet. Het lectoraat werkt aan een grote uitdaging: betere digitale technologie. " >}}
-                                                 
+<!-- {{< intro title="Responsible IT Amsterdam" text= "Het lectoraat Responsible IT onderzoekt digitale technologie die goed is voor de mens, de maatschappij en de planeet. Het lectoraat werkt aan een grote uitdaging: betere digitale technologie. " >}}
+                                                  -->
 
-{{TOC}}
+<!-- {{TOC}} -->
 
 
 

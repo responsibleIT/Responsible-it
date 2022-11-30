@@ -1,74 +1,236 @@
 .hero-big,
 .hero-small,
 .hero-artwork {
-    display: grid;
-    place-items: center;
-    margin-top: -4.5rem;
-    position: relative;
-    overflow: hidden;
-    --text-color: var(--white);
-    background-color: var(--grey);
+	display: grid;
+	place-items: center;
+	margin-top: -4.5rem;
+	position: relative;
+	overflow: hidden;
+	--text-color: var(--white);
+	background-color: var(--grey);
 }
 
 .hero-big {
-    height: min(100vh, 70rem);
+	height: min(100vh, 70rem);
 }
 
-.hero-list{
-    background-color: var(--orange);
-    min-height: 25vh;
-    margin-top: calc(0.1rem - 5px);
-    width: 100vw;
+.hero-list {
+	background-color: var(--orange);
+	min-height: 25vh;
+	margin-top: calc(0.1rem - 5px);
+	width: 100vw;
 }
 
-.hero-list::after{
-    content: "";
-    
+.hero-list::after {
+	content: "";
+
 }
+
 .hero-small {
-    height: min(75vh, 40rem);
+	height: min(75vh, 40rem);
+}
+
+.index-hero * {
+	color: var(--white);
+}
+
+.index-hero {
+	width: 100vw;
+	--m: 10vw;
+	padding-top: 95px;
+	padding-bottom: 95px;
+
+	width: 100vw;
+	background-color: var(--h1);
+
+	/* --c0 is steeds een kleur met hsl */
+	/* de hue van hsl wordt met js gegenereerd calc(360 * var(--h0)) */
+	/* als js niet werkt wordt een fallback gebruikt voor de --h0 */
+	--c0: #D54300;
+	--c1: #A03200;
+	--c2: #D54300;
+	--c3: #A03200;
+	--c4: #D54300;
+	--c5: #A03200;
+	--c6: #D54300;
+	--c7: #FF5000;
+
+	background-image:
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c0) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c1) 60deg 120deg,
+			transparent 120deg),
+
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c2) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c3) 60deg 120deg,
+			transparent 120deg),
+
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c4) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c5) 60deg 120deg,
+			transparent 120deg),
+
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c6) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c7) 60deg 120deg,
+			transparent 120deg);
+
+	background-size:
+		calc(var(--m) * .86) calc(var(--m) * 1);
+
+	background-position:
+		50% 50%,
+		50% 50%,
+
+		/* beetje naar beneden + naar links en naar rechts swappen */
+		calc(50% - var(--m) / 2 * .86) calc(50% + var(--m) * .75),
+		calc(50% + var(--m) / 2 * .86) calc(50% + var(--m) * .75),
+
+		/* beetje meer naar beneden */
+		50% calc(50% + var(--m) * 1.5),
+		50% calc(50% + var(--m) * 1.5),
+
+		/* nog beetje meer naar beneden + naar links en naar rechts swappen */
+		calc(50% - var(--m) / 2 * .86) calc(50% + var(--m) * 2.25),
+		calc(50% + var(--m) / 2 * .86) calc(50% + var(--m) * 2.25);
 }
 
 .hero-artwork {
-    height: 25vh;
-    background-color: var(--black-2);
+	height: 25vh;
 }
 
 .hero-big::after,
 .hero-small::after,
 .hero-artwork::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 3rem 0 0;
-    background: radial-gradient(rgba(0, 0, 0, 0.65) 30%, rgb(0 0 0 / 20%));
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	inset: 3rem 0 0;
 }
 
 .hero-img {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    inset: 0;
-    object-fit: cover;
-    object-position: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	inset: 0;
+	object-fit: cover;
+	object-position: center;
 }
 
 .hero-content {
-    z-index: 1;
+	z-index: 1;
 }
 
 .hero-content .heading-xl {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .hero-artwork {
-    height: 25vh;
-    margin-top: calc(0.1rem - 5px);
+	height: 25vh;
+	margin-top: calc(0.1rem - 5px);
 }
 
 @media (max-width: 73rem) {
-    .hero-artwork {
-        height: 25vh;
-    }
+	.hero-artwork {
+		height: 25vh;
+	}
+}
+
+body {
+	margin: 0;
+}
+
+
+.artwork-random2 {
+	--m: 10vw;
+
+	width: 100vw;
+	background-color: #8A8A8A;
+
+	/* --c0 is steeds een kleur met hsl */
+	/* de hue van hsl wordt met js gegenereerd calc(360 * var(--h0)) */
+	/* als js niet werkt wordt een fallback gebruikt voor de --h0 */
+	--c0: var(--h0, #25167A);
+	--c1: var(--h1, #2269BD);
+	--c2: var(--h2, #2269BD);
+	--c3: var(--h3, #25167A);
+	--c4: var(--h4, #CA449E);
+	--c5: var(--h5, #CA449E);
+	--c6: var(--h6, #EA5F1F);
+	--c7: var(--h7, #EA5F1F);
+
+
+	background-image:
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c0) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c1) 60deg 120deg,
+			transparent 120deg),
+
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c2) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c3) 60deg 120deg,
+			transparent 120deg),
+
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c4) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c5) 60deg 120deg,
+			transparent 120deg),
+
+		/* naar rechts */
+		conic-gradient(transparent 240deg,
+			var(--c6) 240deg 300deg,
+			transparent 300deg),
+		/* naar links */
+		conic-gradient(transparent 60deg,
+			var(--c7) 60deg 120deg,
+			transparent 120deg);
+
+	background-size:
+		calc(var(--m) * .86) calc(var(--m) * 1);
+
+	background-position:
+		50% 50%,
+		50% 50%,
+
+		/* beetje naar beneden + naar links en naar rechts swappen */
+		calc(50% - var(--m) / 2 * .86) calc(50% + var(--m) * .75),
+		calc(50% + var(--m) / 2 * .86) calc(50% + var(--m) * .75),
+
+		/* beetje meer naar beneden */
+		50% calc(50% + var(--m) * 1.5),
+		50% calc(50% + var(--m) * 1.5),
+
+		/* nog beetje meer naar beneden + naar links en naar rechts swappen */
+		calc(50% - var(--m) / 2 * .86) calc(50% + var(--m) * 2.25),
+		calc(50% + var(--m) / 2 * .86) calc(50% + var(--m) * 2.25);
 }

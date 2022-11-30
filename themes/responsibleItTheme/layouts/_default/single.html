@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="hero-artwork artwork-random">
+<div class="hero-artwork artwork-random2">
     <div class="hero-content column-middle width-container">
     </div>
 </div>
@@ -7,8 +7,9 @@
 </div>
 
 <main class="width-container" id="main">
+  <div class="title-container"><h1 class="article-title" >{{ .Title }} </h1>
+  </div>
 
-<h1 class="article-title" >{{ .Title }} </h1>
 {{ partial "metadata.html" . }}
 <br><br>
 

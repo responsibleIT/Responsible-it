@@ -7,5 +7,5 @@ tags:
 showthedate: true
 ---
 
-Iets nieuws
+Iets nieuws staat hier
 

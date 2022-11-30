@@ -1,4 +1,4 @@
-<div>
+<div class="meta">
 
     {{ if .Params.showthedate }}
     <time>{{ .Date.Format "02-01-2006"}}</time>
@@ -6,7 +6,7 @@
 
 
 </div>
-<div>
+<div class="meta">
     {{ with .Params.tags }}
     <i data-feather="tag"></i>
     {{ range . }}

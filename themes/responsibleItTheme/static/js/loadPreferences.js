@@ -1,5 +1,4 @@
 // Get font size preference
-console.log('load preferences')
 const root = document.documentElement
 const storedFontSize = localStorage.getItem('font-size')
 if (storedFontSize) root.style.fontSize = storedFontSize

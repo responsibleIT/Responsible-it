@@ -140,7 +140,7 @@
         align-items: center;
         gap: 2rem;
         margin-top: 1em !important;
-        margin-bottom: 1em !important;     }
+        margin-bottom: 0 !important;     }
 }
 
 .nav-active{

@@ -4,7 +4,7 @@ draft: false
 date: 2022-11-30T11:50:36.072Z
 tags:
   - AI
-showthedate: true
+showthedate: false
 ---
 
 Iets nieuws over nieuws

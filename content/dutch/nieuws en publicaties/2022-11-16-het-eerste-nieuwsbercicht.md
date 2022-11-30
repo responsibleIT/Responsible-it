@@ -1,6 +1,6 @@
 ---
 title: Het eerste nieuwsbercicht
-draft: false
+draft: true
 date: 2022-11-24T14:47:01.412Z
 tags:
   - Articles

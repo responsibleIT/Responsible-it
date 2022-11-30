@@ -10,7 +10,7 @@ tags: []
 
 
 
-# Thema's - wat is goede digitale technologie?
+# Thema's: wat is goede digitale technologie?
 ## Robuust 
 De techniek moet betrouwbaar werken. Niets is vervelender dan een computersysteem dat het niet doet, of de ene keer wel en de andere keer niet. Robuust betekent meer dan een werkend systeem. Het moet niet uitmaken met welke computer je werkt, een tablet, een Android smartphone of een Apple phone, of een desktop met groot scherm, het zou niet moeten uitmaken. Ook willen we future proof zijn, de techniek moet ook correct werken als er straks een nieuwe smartphone komt. 
 ## Eerlijk

@@ -41,7 +41,7 @@
 	padding-bottom: 95px;
 
 	width: 100vw;
-	background-color: var(--h1);
+	background-color: #A03200;
 
 	/* --c0 is steeds een kleur met hsl */
 	/* de hue van hsl wordt met js gegenereerd calc(360 * var(--h0)) */
@@ -163,8 +163,7 @@ body {
 	--m: 10vw;
 
 	width: 100vw;
-	background-color: #8A8A8A;
-
+	background-color: var(--h0, #D54300);
 	/* --c0 is steeds een kleur met hsl */
 	/* de hue van hsl wordt met js gegenereerd calc(360 * var(--h0)) */
 	/* als js niet werkt wordt een fallback gebruikt voor de --h0 */

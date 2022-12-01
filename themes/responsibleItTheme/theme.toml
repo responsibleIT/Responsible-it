@@ -1,15 +1,14 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
 
 name = "ResponsibleItTheme"
 license = "MIT"
 licenselink = "https://github.com/responsibleIT/Responsible-it/blob/main/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://responsible-it.nl"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
   name = "Responsible IT Amsterdam"
-  homepage = ""
+homepage = "https://responsible-it.nl"

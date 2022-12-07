@@ -29,9 +29,7 @@ Goede digitale technologie doet recht aan publieke waarden, is van goede kwalite
 
 # Praktische handreikingen
 
-Software wordt gemaakt door goed getrainde vakmensen. Die leveren graag een ook verantwoord product op. Het ontbreekt ze vaak aan kennis, methodes en gereedschap hoe.
-
-Het lectoraat onderzoekt en ontwikkelt praktijkgerichte voorbeelden, methodes en middelen. Hiermee kunnen IT professionals en hun leidinggevenden op een verantwoorde manier goede software ontwerpen en maken.
+Software wordt gemaakt door goed getrainde vakmensen. Die leveren graag een ook verantwoord product op. Het ontbreekt ze vaak aan kennis, methodes en gereedschap hoe. Het lectoraat onderzoekt en ontwikkelt praktijkgerichte voorbeelden, methodes en middelen. Hiermee kunnen IT professionals en hun leidinggevenden op een verantwoorde manier goede software ontwerpen en maken.
 
 # Onderzoek bij het Lectoraat Responsible IT
 Het lectoraat richt zich op methodes (voor) duiden, ontwerpen en implementeren van verantwoorde IT systemen. Praktische handreikingen voor ontwerpers en ontwikkelaars van digitale toepassingen die duiding geven aan wat verantwoord betekent.

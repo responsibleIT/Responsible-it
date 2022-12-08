@@ -9,7 +9,9 @@ tags: []
 
 <!-- {{TOC}} -->
 
+De Hogeschool van Amsterdam onderzoekt met het lectoraat Responsible IT welke rol maatschappelijke vraagstukken als gezondheid, onderwijs en mobiliteit moeten spelen bij de ontwikkeling van digitale technologie. Het onderzoek is een initiatief van lector Nanda Piersma en de Gemeente Amsterdam als een reactie op de toenemende invloed van Amerikaanse big tech bedrijven en Aziatische overheidstoepassingen van controlesystemen als gezichtsherkenning. 
 
+Uitgangspunt van Responsible IT is het verwerven, gebruiken en delen van data op een verantwoorde manier, en het helpen van ontwikkelaars en instanties hierbij. Technologieën als algoritmes en kunstmatige intelligentie worden daarbij uitsluitend gebruikt op een mensgerichte manier en als deze transparant en betrouwbaar zijn. Privacy en autonomie zijn daarbij gewaarborgd en niemand wordt buitengesloten.
 
 # Thema's: wat is goede digitale technologie?
 ## Robuust 

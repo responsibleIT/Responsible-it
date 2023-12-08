@@ -6,7 +6,7 @@ tags:
   - design
   - prototypes
   - AI
-showthedate: false
+showthedate: true
 ---
 Als HvA leveren wij een “researcher-in-residence” (gastonderzoeker) bij de Province Noord-Holland om samen te onderzoeken hoe AI-tools momenteel in de organisatie worden gebruikt en welke meningen/gevoelens werknemers hebben ten aanzien van deze tools. Met groepen collega’s onderzoeken en leren we hoe we deze generatieve AI-tools kunnen gebruiken en reflecteren we samen in hoeverre (en op welke manier) we dat verantwoord kunnen doen.
 

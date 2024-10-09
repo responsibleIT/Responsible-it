@@ -1,4 +1,4 @@
-baseURL = 'http://responsible-it.nl/'
+baseURL = 'https://oldwebsite.responsible-it.nl/'
 languageCode = 'nl'
 title = 'Responsible IT'
 theme = 'responsibleItTheme'

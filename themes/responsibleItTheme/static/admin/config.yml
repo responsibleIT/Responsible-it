@@ -2,7 +2,7 @@ backend:
   name: github
   repo: responsibleIT/Responsible-it
   branch: production
-  base_url: https://responsible-it.nl
+  base_url: https://oldwebsite.responsible-it.nl
   locales: [nl, en]
   default_locale: nl
   accept_roles: #optional - accepts all users if left out

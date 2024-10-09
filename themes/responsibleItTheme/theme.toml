@@ -4,11 +4,11 @@ name = "ResponsibleItTheme"
 license = "MIT"
 licenselink = "https://github.com/responsibleIT/Responsible-it/blob/main/LICENSE"
 description = ""
-homepage = "https://responsible-it.nl"
+homepage = "https://oldwebsite.responsible-it.nl"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
   name = "Responsible IT Amsterdam"
-homepage = "https://responsible-it.nl"
+homepage = "https://oldwebsite.responsible-it.nl"
